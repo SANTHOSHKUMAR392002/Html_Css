@@ -1,0 +1,411 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Base Styles */
+.image-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #191919;
+    color: #fff;
+}
+
+.image-section h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.image-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.image-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Default Navigation (Desktop View) */
+.nav-section {
+    background-color: #333;
+    /* Background color of the navbar */
+    padding: 10px 20px;
+    /* Padding around the navbar */
+}
+
+.nav-container {
+    /* display: flex; */
+    justify-content: space-between;
+    /* Space between logo and nav items */
+    align-items: center;
+    /* Vertically center content */
+}
+
+.nav-logo {
+    width: 25%;
+    margin: auto;
+}
+
+.nav-logo img {
+    height: 80px;
+    /* margin: auto; */
+    width: 70px;
+}
+
+.nav-content {
+    /* display: flex; */
+    gap: 15px;
+    /* Space between navigation items */
+}
+
+.nav-content .col1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.nav-content .col1 a {
+    color: white;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-content .col1 a:hover {
+    background-color: #007BFF;
+    /* Change background on hover */
+}
+
+
+.s2-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 20px;
+}
+
+.about-img {
+    flex: 1;
+    padding: 2px;
+    /* max-width: 50%; */
+}
+
+.about-content {
+    flex: 1;
+    padding: 2px;
+    text-align: left;
+}
+
+/* Services Section */
+.service-section,
+.service2-section,
+.s3-section,
+.s4-section,
+.s6-section,
+.s7-section,
+.s8-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.s2-img-c {
+    /* display: flex; */
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.s2-image,
+.s2-list {
+    flex: 1;
+}
+
+.s6-profile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+}
+
+.s6-image-container {
+    text-align: center;
+    max-width: 300px;
+}
+
+.photo1 {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo1 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Portfolio Section */
+.s4-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.s8-box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.s8-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s8-box2 {
+    width: 500px;
+    margin: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    /* Adjusted margin for smaller screens */
+    padding: 0 1rem;
+    /* Ensure some padding on small screens */
+}
+
+.footer-input input {
+    width: 100%;
+    /* Full width for mobile devices */
+    max-width: 100%;
+    /* Ensure it doesn't exceed the screen width */
+    padding: 10px 15px;
+    /* Slightly larger padding for touch usability */
+    font-size: 1rem;
+    /* Keep font readable */
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    /* Adjusted for a compact look */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Lighter shadow for mobile */
+}
+
+.footer-input input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+.footer-input input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+.s8-box2 {
+    display: flex;
+    flex-direction: column;
+    /* Stack the input fields vertically */
+    gap: 1rem;
+    /* Space between the input fields */
+    padding: 1rem;
+    /* Add some padding around the container */
+    max-width: 100%;
+    /* Ensure it fits within the screen */
+}
+
+.s8-box2 input {
+    width: 100%;
+    /* Full width for mobile devices */
+    padding: 10px 15px;
+    /* Ensure the input fields are touch-friendly */
+    font-size: 1rem;
+    /* Readable font size */
+    border: 2px solid #ccc;
+    /* Subtle border */
+    border-radius: 20px;
+    /* Rounded corners for input fields */
+    outline: none;
+    /* Remove default focus outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+}
+
+.s8-box2 input:focus {
+    border-color: #007BFF;
+    /* Highlight border on focus */
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+    /* Glowing effect */
+}
+
+.s8-box2 input::placeholder {
+    color: #aaa;
+    /* Light grey placeholder */
+    font-style: italic;
+    /* Italic placeholder text */
+}
+
+.col1 {
+    cursor: pointer;
+}
+
+.box-content {
+    padding-top: 50px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.s6-profile {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-i-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.s5-container {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    flex-direction: column;
+    /* Ensure content stacks if needed */
+    /* height: 100vh; */
+    /* Make container take full viewport height */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width/height */
+
+}
+
+.s5-ul {
+    list-style: none;
+    /* Remove bullet points */
+    display: flex;
+    /* Enables flexbox */
+    flex-direction: row;
+    justify-content: center;
+    /* Centers the list items horizontally */
+    align-items: center;
+    /* Centers the list items vertically */
+    flex-wrap: wrap;
+    /* Ensures items wrap to the next line on smaller screens */
+    gap: 50px;
+    /* Adds space between items */
+    padding: 0;
+    /* Removes default padding */
+    margin: 0;
+    /* Removes default margin */
+}
+
+@media (min-width: 1024px) {
+    .nav-content {
+        display: flex;
+        /* Flexbox for tablet and larger screens */
+        gap: 15px;
+        /* Add space between navigation items */
+    }
+
+    .nav-container {
+        display: flex;
+    }
+
+    .nav-content .col1 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    
+.s2-img-c {
+    display: flex;}
+
+
+}
